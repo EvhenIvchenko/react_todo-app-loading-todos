@@ -31,7 +31,7 @@ const App: React.FC = () => {
     if (!errorMessage) {
       return;
     }
-    
+
     const timerId = setTimeout(() => {
       setErrorMessage('');
     }, 3000);
@@ -113,7 +113,9 @@ const App: React.FC = () => {
                     ×
                   </button>
                   <div data-cy="TodoLoader" className="modal overlay">
-                    <div className="modal-background has-background-white-ter" />
+                    <div
+                      className="modal-background has-background-white-ter"
+                    />
                     <div className="loader" />
                   </div>
                 </div>
@@ -204,4 +206,5 @@ const App: React.FC = () => {
     </div>
   );
 };
+
 export default App;
